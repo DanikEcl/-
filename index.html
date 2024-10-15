@@ -16,7 +16,7 @@
     <div class="navbar">
         <!-- Название сайта -->
         <div class="navbar-brand">Travel Blog</div>
-
+        <button class="navbar-toggle" aria-label="Open menu">☰</button>
         <!-- Меню -->
         <div class="navbar-menu">
             <a href="index.html" class="navbar-item">Главная</a>
@@ -68,7 +68,14 @@
                     добавить.</div>
             </div>
         </div>
-
+<script>
+            const toggleButton = document.querySelector('.navbar-toggle');
+            const navbarMenu = document.querySelector('.navbar-menu');
+        
+            toggleButton.addEventListener('click', () => {
+                navbarMenu.classList.toggle('active');
+            });
+        </script>
 </body>
 
 </html>
