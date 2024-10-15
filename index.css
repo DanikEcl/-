@@ -197,7 +197,7 @@ a:hover {
     .navbar-item {
         margin-left: 0; /* Убираем отступы слева */
         margin-bottom: 10px; /* Добавляем отступы между элементами */
-        font-size: 20px; /* Уменьшаем размер шрифта */
+        font-size: 13px; /* Уменьшаем размер шрифта */
     }
 
     .main-title {
