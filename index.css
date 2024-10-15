@@ -182,6 +182,7 @@ a:hover {
 
 
 
+
 @media (max-width: 768px) {
     body {
         font-size: 16px; /* Уменьшаем общий размер шрифта */
@@ -231,5 +232,42 @@ a:hover {
     .social-icons a {
         font-size: 18px; /* Уменьшаем размер иконок */
         padding: 0 10px; /* Увеличиваем отступы между иконками */
+    }
+
+    .navbar {
+        flex-direction: column; /* Вертикальное расположение элементов */
+        align-items: flex-start; /* Выравнивание по левому краю */
+        padding: 10px; /* Увеличиваем отступы для удобства */
+    }
+
+    .navbar-toggle {
+        display: block; /* Отображение кнопки для открытия меню */
+        background: none; /* Без фона */
+        border: none; /* Без рамки */
+        font-size: 30px; /* Размер кнопки */
+        color: white; /* Цвет текста */
+        cursor: pointer; /* Указатель при наведении */
+        margin-bottom: 10px; /* Отступ снизу */
+    }
+
+    .navbar-menu {
+        display: none; /* Скрываем меню по умолчанию */
+        flex-direction: column; /* Вертикальное расположение */
+        width: 100%; /* Ширина меню */
+        background-color: #333; /* Цвет фона меню */
+        position: absolute; /* Позиционирование */
+        top: 50px; /* Отступ от верхней грани */
+        left: 0; /* Прикрепить к левому краю */
+        z-index: 100; /* На переднем плане */
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Показываем меню при активации */
+    }
+
+    .navbar-item {
+        padding: 10px; /* Отступы внутри пункта меню */
+        width: 100%; /* Ширина пункта меню */
+        text-align: left; /* Выравнивание текста */
     }
 }
