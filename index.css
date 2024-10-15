@@ -179,3 +179,57 @@ a:hover {
 .fancy-button:focus {
     outline: none; /* Убираем обводку при фокусе */
 }
+
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Уменьшаем общий размер шрифта */
+    }
+
+    .navbar {
+        flex-direction: column; /* Вертикальное расположение элементов */
+        align-items: flex-start; /* Выравнивание по левому краю */
+        padding: 10px; /* Увеличиваем отступы для более удобного восприятия */
+    }
+
+    .navbar-item {
+        margin-left: 0; /* Убираем отступы слева */
+        margin-bottom: 10px; /* Добавляем отступы между элементами */
+        font-size: 20px; /* Уменьшаем размер шрифта */
+    }
+
+    .main-title {
+        font-size: 30px; /* Уменьшаем размер заголовка */
+        text-align: center; /* Центрируем заголовок */
+    }
+
+    .subtext {
+        font-size: 16px; /* Уменьшаем размер подзаголовка */
+        padding: 0 10px; /* Добавляем горизонтальные отступы */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .text-block {
+        padding: 20px; /* Увеличиваем отступы для удобства чтения */
+    }
+
+    .button-container {
+        margin-top: 20px; /* Добавляем отступ сверху для кнопки */
+    }
+
+    .fancy-button {
+        padding: 10px 20px; /* Уменьшаем отступы кнопки */
+        font-size: 14px; /* Уменьшаем размер шрифта на кнопке */
+    }
+
+    .social-icons {
+        justify-content: center; /* Центрируем иконки */
+        margin-top: 10px; /* Отступ сверху для иконок */
+    }
+
+    .social-icons a {
+        font-size: 18px; /* Уменьшаем размер иконок */
+        padding: 0 10px; /* Увеличиваем отступы между иконками */
+    }
+}
